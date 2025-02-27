@@ -1,10 +1,10 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import {
+  IconButton,
+  InputAdornment,
   TableCell,
   TableRow,
   TextField,
-  InputAdornment,
-  IconButton,
 } from '@mui/material';
 import React from 'react';
 
@@ -12,6 +12,7 @@ import { MAX_CART_VALUE } from '@/constants';
 import { cartValidationMessages } from '@/messages';
 import { formatPrice } from '@/utils/formatter';
 
+// 테이블의 모든 상품을 대상으로 기능 검증이 효율적이다.
 const ProductInfoTableRow = ({
   item,
   user,

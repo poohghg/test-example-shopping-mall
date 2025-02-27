@@ -1,6 +1,10 @@
 {
   "root": true,
-  "plugins": ["react", "react-hooks", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "prettier"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
@@ -13,7 +17,10 @@
     "browser": true,
     "node": true
   },
-  "ignorePatterns": ["node_modules/*", "dist"],
+  "ignorePatterns": [
+    "node_modules/*",
+    "dist"
+  ],
   "parserOptions": {
     "ecmaVersion": 2022,
     "sourceType": "module",
@@ -25,9 +32,17 @@
     "no-unused-vars": "warn",
     "react/prop-types": "off",
     "import/order": [
-      "error",
+      "warn",
       {
-        "groups": ["builtin", "external", ["parent", "sibling"], "index"],
+        "groups": [
+          "builtin",
+          "external",
+          [
+            "parent",
+            "sibling"
+          ],
+          "index"
+        ],
         "alphabetize": {
           "order": "asc",
           "caseInsensitive": true
@@ -53,8 +68,12 @@
         "src/**/*.spec.js",
         "src/**/*.spec.jsx"
       ],
-      "plugins": ["vitest"],
-      "extends": ["plugin:vitest/recommended"],
+      "plugins": [
+        "vitest"
+      ],
+      "extends": [
+        "plugin:vitest/recommended"
+      ],
       "rules": {
         "vitest/expect-expect": "off"
       },
